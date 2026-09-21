@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="24dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Instant Virtual AI Predictions" android:textSize="26sp"
+            android:textStyle="bold" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:text="Upload a screenshot to analyze it." android:textSize="16sp"
+            android:gravity="center" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/preview" android:layout_width="match_parent" android:layout_height="260dp"
+            android:layout_marginTop="24dp" android:scaleType="fitCenter" android:contentDescription="Screenshot preview"/>
+        <Button android:id="@+id/uploadButton" android:text="UPLOAD SCREENSHOT"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+        <Button android:id="@+id/analyzeButton" android:text="ANALYZE"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <TextView android:id="@+id/result" android:text="Result will appear here."
+            android:textSize="18sp" android:layout_marginTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:text="Note: predictions are estimates, not guaranteed results."
+            android:textSize="13sp" android:layout_marginTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
